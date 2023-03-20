@@ -1,0 +1,22 @@
+@import "src/styles/styles";
+
+.btn {
+    border-radius: @border-radius;
+    background-color: @main-color;
+    border: none;
+    color: @white;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 4px;
+    height: 38px;
+    width: 100%;
+    cursor: pointer;
+    transition: 100ms;
+    user-select: none;
+
+    &:disabled {
+        opacity: 0.5;
+    }
+}

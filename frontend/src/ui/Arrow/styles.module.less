@@ -1,0 +1,30 @@
+@import "src/styles/styles";
+
+.path {
+    stroke: @main-color;
+}
+
+.down {
+    transform: rotate(270 de);
+}
+
+.right {
+    transform: rotate(180deg);
+}
+
+.btn {
+    height: 40px;
+    background-color: @white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 8px;
+    gap: 4px;
+    border-radius: 50%;
+    cursor: pointer;
+    width: 40px;
+
+    &:hover {
+        background-color: rgba(124, 124, 124, 0.11);
+    }
+}

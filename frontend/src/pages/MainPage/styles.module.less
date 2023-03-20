@@ -1,0 +1,46 @@
+@import "src/styles/styles";
+
+.container {
+    background-color: @white;
+    padding: 16px;
+    min-height: 100vh;
+    display: flex;
+    justify-content: space-between;
+    gap: 16px;
+}
+
+.left_sidebar {
+    width: 100%;
+    max-width: 364px;
+    transition: 0.3s;
+    position: relative;
+}
+
+.container_message {
+    width: 100%;
+    transition: 100ms;
+}
+
+@media (max-width: 1024px) {
+    .left_sidebar {
+        width: 100%;
+        max-width: 264px;
+    }
+}
+
+@media (max-width: 758px) {
+    .container {
+        padding: 0;
+    }
+
+    .left_sidebar {
+        max-width: 100%;
+    }
+
+    .container_message {
+        position: absolute;
+        left: 100vw;
+        top: 0;
+        z-index: 1;
+    }
+}

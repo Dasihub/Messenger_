@@ -1,0 +1,46 @@
+@import "src/styles/styles";
+
+.main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    box-shadow: @shadow-container;
+    background-color: white;
+    padding: 16px;
+    border-radius: 10px;
+}
+
+.auth {
+    width: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 16px;
+    padding: 40px;
+
+    h1 {
+        font-size: 24px;
+    }
+
+
+    div {
+        width: 100%;
+    }
+}
+
+.link {
+    width: 100%;
+
+    a {
+        font-size: 14px;
+
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+}

@@ -1,0 +1,60 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@main-color: #6E00FF;
+@link: #551a8b;
+@danger: #EF4444;
+@shadow-container: 0px 4px 5px 2px rgba(121, 197, 239, 0.38);
+@shadow-input: 1px 0px 1px 1px #6E00FF;
+@black: #303030;
+@gray: #7C7C7C;
+@white: #ffffff;
+@background: #bebebe;
+@border-radius: 16px;
+
+body {
+    background-color: @background;
+    font-family: 'Roboto', sans-serif;
+    overflow-x: hidden;
+    position: fixed;
+    height: 100%;
+    overflow-y: auto;
+    -webkit-overflow-scrolling: auto;
+    left: 0;
+    top: 0;
+    width: 100%;
+}
+
+.main_container {
+    max-width: 1440px;
+    display: block;
+    margin: auto;
+}
+
+a {
+    text-decoration: none;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: @main-color;
+    border-radius: @border-radius;
+}
+
+::-webkit-scrollbar {
+    width: 4px;
+}
+
+@media (max-width: 758px) {
+    ::-webkit-scrollbar {
+        width: 7px;
+    }
+}

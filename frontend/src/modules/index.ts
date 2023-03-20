@@ -1,0 +1,8 @@
+export { default as ActiveAccount } from './Register/ActiveAccount/ActiveAccount'
+export { default as UserRegister } from './Register/UserRegister/UserRegister'
+export { default as ListUsers } from './Main/ListUsers/ListUsers'
+export { default as InfoHeader } from './Main/InfoHeader/InfoHeader'
+export { default as LeftHeader } from './Main/LeftHeader/LeftHeader'
+export { default as Chat } from './Main/Chat/Chat'
+export { default as Setting } from './Main/Setting/Setting'
+// export {default as } from ''

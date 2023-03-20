@@ -1,0 +1,97 @@
+@import "src/styles/styles";
+
+.container {
+    padding: 16px;
+    border-radius: 4px;
+    height: 72px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: @shadow-container;
+    background-color: @white;
+}
+
+.userinfo {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    cursor: pointer;
+}
+
+.userinfo__photo {
+    border-radius: 50%;
+    object-fit: cover;
+    pointer-events: none;
+    user-select: none;
+    -webkit-user-drag: none;
+    width: 48px;
+    height: 48px;
+    cursor: pointer;
+}
+
+.username {
+    font-weight: 600;
+    font-size: 17px;
+    line-height: 23px;
+    color: @black;
+    cursor: pointer;
+}
+
+.time {
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 19px;
+    color: @gray;
+}
+
+//.item {
+//    display: flex;
+//    flex-direction: column;
+//    justify-content: center;
+//    align-items: center;
+//    gap: 3px;
+//    cursor: pointer;
+//    width: 40px;
+//    height: 40px;
+//    border-radius: 50%;
+//
+//    &:hover {
+//        background-color: rgba(124, 124, 124, 0.11);
+//    }
+//}
+//
+//.items {
+//    background-color: @main-color;
+//    width: 5px;
+//    height: 5px;
+//    border-radius: 50%;
+//}
+
+.back {
+    display: none;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    background: none;
+    cursor: pointer;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+
+    &:hover {
+        background-color: rgba(124, 124, 124, 0.11);
+    }
+}
+
+@media (max-width: 758px) {
+    .back {
+        display: flex;
+    }
+
+    .container {
+        padding: 8px;
+        position: sticky;
+        top: 0;
+        z-index: 1;
+    }
+}

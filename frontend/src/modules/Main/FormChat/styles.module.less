@@ -1,0 +1,62 @@
+@import "src/styles/styles";
+
+.form {
+    position: absolute;
+    width: 100%;
+    left: 0;
+    bottom: 0;
+    padding: 14px 84px;
+    display: flex;
+    justify-content: space-between;
+    gap: 24px;
+    //background-color: @white;
+
+    input {
+        background: #EEEEEE;
+        border-radius: 10px;
+        padding-left: 20px;
+        width: 100%;
+        outline: none;
+        border: none;
+        accent-color: @main-color;
+        height: 38px;
+    }
+
+    button {
+        background-color: @main-color;
+        border: none;
+        height: 38px;
+        width: 44px;
+        border-radius: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+    }
+}
+
+@media (max-width: 1024px) {
+    .form {
+        padding: 14px 34px;
+    }
+}
+
+@media (max-width: 758px) {
+    .form {
+        padding: 8px;
+
+        input {
+            height: 54px;
+        }
+
+        button {
+            height: 54px;
+            width: 74px;
+
+            svg {
+                height: 27px;
+                width: 27px;
+            }
+        }
+    }
+}

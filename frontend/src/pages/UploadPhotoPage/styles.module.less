@@ -1,0 +1,42 @@
+@import "../../styles/styles";
+
+.main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    box-shadow: @shadow-container;
+    background-color: white;
+    padding: 16px;
+    border-radius: 10px;
+}
+
+.box {
+    width: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 16px;
+    padding: 20px 40px;
+    box-shadow: @shadow-container;
+    background-color: @white;
+    border-radius: @border-radius;
+}
+
+//.skip {
+//    color: @link;
+//    cursor: pointer;
+//}
+
+.avatar {
+    object-fit: cover;
+    object-position: center;
+    width: 250px;
+    height: 250px;
+    //border: @main-color 3px solid;
+    border-radius: 50%;
+}

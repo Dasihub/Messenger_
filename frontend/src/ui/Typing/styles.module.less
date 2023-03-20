@@ -1,0 +1,93 @@
+.loader {
+    background-color: #E7E7E7;
+    display: flex;
+    max-width: 30rem;
+    justify-content: space-between;
+    align-items: center;
+    gap: 3px;
+    width: fit-content;
+    border-radius: 0.75rem;
+    padding: .600rem .5rem .375rem;
+    line-height: 20px;
+}
+
+.loader__dot {
+    background-color: #303030;
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+}
+
+.dot_1 {
+    animation: 1s dot__1 infinite;
+    transform: translateY(3px);
+    transition: 1s;
+}
+
+@keyframes dot__1 {
+    0% {
+        transform: translateY(0px);
+    }
+
+    25% {
+        transform: translateY(4px);
+    }
+
+    50% {
+        transform: translateY(-4px);
+    }
+
+    100% {
+        transform: translateY(0px);
+    }
+}
+
+.dot_2 {
+    animation: 1s dot__2 infinite;
+    transform: translateY(3px);
+}
+
+@keyframes dot__2 {
+    0% {
+        transform: translateY(4px);
+    }
+
+    25% {
+        transform: translateY(0px);
+    }
+
+    50% {
+        transform: translateY(0px);
+    }
+
+    75% {
+        transform: translateY(-2px);
+    }
+
+    100% {
+        transform: translateY(-4px);
+    }
+}
+
+.dot_3 {
+    animation: 1s dot__3 infinite;
+    transform: translateY(3px);
+}
+
+@keyframes dot__3 {
+    0% {
+        transform: translateY(0px);
+    }
+
+    25% {
+        transform: translateY(-4px);
+    }
+
+    50%, 75% {
+        transform: translateY(4px);
+    }
+
+    100% {
+        transform: translateY(0px);
+    }
+}

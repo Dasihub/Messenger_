@@ -1,0 +1,5 @@
+export { default as Auth } from './Auth/Auth'
+export { default as UploadPhoto } from './UploadPhoto/UploadPhoto'
+export { default as SettingModalProfileImg } from './SettingModals/SettingModalProfileImg'
+export { default as SettingModalPassword } from './SettingModals/SettingModalPassword'
+// export {default as } from ''

@@ -1,0 +1,32 @@
+@import "src/styles/styles";
+
+.message {
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+}
+
+.message__block {
+    background-color: @main-color;
+    color: @white;
+    display: flex;
+    max-width: 30rem;
+    justify-content: center;
+    align-items: center;
+    width: fit-content;
+    border-radius: 0.75rem;
+    padding: .3125rem .5rem .375rem;
+    line-height: 20px;
+}
+
+@media (max-width: 1024px) {
+    .message__block {
+        max-width: 17rem;
+    }
+}
+
+@media (max-width: 758px) {
+    .message__block {
+        font-size: 18px;
+    }
+}
